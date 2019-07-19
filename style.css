@@ -7,12 +7,62 @@ body {
     background: linear-gradient(45deg, rgb(5, 119, 148),rgb(2, 75, 75));
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     
 }
+
 h1 {
     text-align: center;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 2px 2px rgba(3, 63, 63, 0.781);
     font-size: larger;
+    position: absolute;
+    top: 10px;
+}
+
+@keyframes opacityAnim {
+    
+    0% {
+        background-color: white;
+        color: black;
+        box-shadow: 3px 2px 7px black;
+        text-shadow: 2px 2px rgba(3, 63, 63, 0.781);
+        transform: translateX(-400px);
+        -webkit-transform: translateX(-400px);
+        -moz-transform: translateX(-400px);
+        -ms-transform: translateX(-400px);
+        -o-transform: translateX(-400px);
+}
+    100% {
+        background-color: black ;
+        color: white;
+        box-shadow: 3px 2px 9px rgba(255, 255, 255, 0.788);
+        text-shadow: 2px 2px rgba(212, 216, 216, 0.849);
+        transform: translateX(400px);
+        -webkit-transform: translateX(400px);
+        -moz-transform: translateX(400px);
+        -ms-transform: translateX(400px);
+        -o-transform: translateX(400px);
+}
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    animation: opacityAnim 1.3s 0.5s both infinite alternate ease-in-out;
+    -webkit-animation: opacityAnim 1.3s 0.5s both infinite alternate ease-in-out;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
