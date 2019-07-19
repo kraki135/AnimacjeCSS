@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: black;
+    background: linear-gradient(45deg, rgb(5, 119, 148),rgb(2, 75, 75));
+    width: 100vw;
+    height: 100vh;
+    
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px rgba(3, 63, 63, 0.781);
+    font-size: larger;
+}
